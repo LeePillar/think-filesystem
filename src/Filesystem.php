@@ -4,7 +4,7 @@ declare (strict_types = 1);
 namespace apixx\filesystem;
 
 use InvalidArgumentException;
-use filesystem\Driver;
+use apixx\filesystem\Driver;
 use think\helper\Arr;
 use think\Manager;
 

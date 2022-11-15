@@ -5,7 +5,7 @@ namespace apixx\filesystem\driver;
 use apixx\filesystem\Driver;
 use apixx\Cos\CosAdapter;
 
-class qcloud extends Driver
+class Qcloud extends Driver
 {
 
     protected function createAdapter()
@@ -21,7 +21,7 @@ class qcloud extends Driver
             'signed_url' => false,
             'use_https'  => true, 
         ];
-        code($config);
+        // code($config);
         return new CosAdapter($config);
     }
 }
