@@ -347,7 +347,6 @@ abstract class Driver
     public function url(string $path): string
     {
         $adapter = $this->adapter;
-        code($adapter);
         if (method_exists( $adapter,'getUrl' )) {
             return $adapter->getUrl( $path );
         } elseif (method_exists( $this->filesystem,'getUrl' )) {
