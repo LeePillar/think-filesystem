@@ -1,0 +1,32 @@
+{
+    "name": "apixx/think-filesystem",
+    "description": "flysystem for thinkphp6.1",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "pillar",
+            "email": "ltmn@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "apixx/flysystem-oss": "^1.0",
+        "apixx/flysystem-cos": "^1.0",
+        "apixx/flysystem-obs": "^1.0",
+        "apixx/flysystem-qiniu": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "apixx\\filesystem\\": "src"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "apixx\\filesystem\\Service"
+            ]
+        }
+    }
+}
