@@ -53,6 +53,8 @@ config/filesystem.php
    - [iiDestiny/flysystem-oss](https://github.com/iiDestiny/flysystem-oss)
    - [overtrue/flysystem-qiniu](https://github.com/overtrue/flysystem-qiniu)
    - [overtrue/flysystem-cos](https://github.com/overtrue/flysystem-cos)
-
+   - [yzh52521/think-filesystem](https://github.com/yzh52521/think-filesystem)
+   - [yzh52521/filesystem-oss](https://github.com/yzh52521/filesystem-oss)
+   - [yzh52521/filesystem-obs](https://github.com/yzh52521/filesystem-obs)
 ### 协议
  MIT
