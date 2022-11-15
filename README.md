@@ -6,7 +6,7 @@
    
 ### 使用
 ```php
-composer require jaguarjack/think-filesystem-cloud
+composer require apixx/think-filesystem
 ```   
 
 ### 配置
