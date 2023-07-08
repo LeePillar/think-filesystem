@@ -13,37 +13,40 @@ composer require apixx/think-filesystem
 config/filesystem.php
 ```php
 "disks" => [
-   //阿里云
-        'aliyun' => [
-            'type'         => 'aliyun',
-            'accessId'     => '',
-            'accessSecret' => '',
-            'bucket'       => '',
-            'endpoint'     => '',
-            'url'          => '',//不要斜杠结尾，此处为URL地址域名。
-        ],
-
-        //七牛
-        'qiniu'  => [
-            'type'      => 'qiniu',
-            'accessKey' => '',
-            'secretKey' => '',
-            'bucket'    => '',
-            'url'       => '',//不要斜杠结尾，此处为URL地址域名。
-        ],
-
-        //腾讯云
-        'qcloud' => [
-            'type'      => 'qcloud',
-            'region'    => '', //bucket 所属区域 英文
-            'appId'     => '', //域名中数字部分
-            'secretId'  => '',
-            'secretKey' => '',
-            'bucket'    => '',
-            'domain'    => '', //域名,不要增加http协议
-            'url'       => '',  //CDN加速域名
-        ]
-   ]
+    // oss 配置
+    'oss' => [
+        'type'   => 'oss',
+        'prefix' => '',
+        'access_key' => '';
+        'secret_key' => '';
+        'end_point'  => ''; // ssl：https://iidestiny.com
+        'bucket'     => '';
+        'is_cname'   => true
+    ],
+    // 七牛配置
+    'qiniu' => [
+        'type'       => 'qiniu',
+        'access_key' => '',
+        'secret_key' => '',
+        'bucket'     => '',
+        'domain'     => '',
+    ],
+    // 腾讯云配置
+    'qcloud' => [
+        'type'        => 'qcloud',
+        'region'      => '',
+            'credentials' => [
+                'appId'      => , // 域名中数字部分
+                'secretId'   => '',
+                'secretKey'  => '',
+            ],
+            'bucket'          => 'test',
+            'timeout'         => 60,
+            'connect_timeout' => 60,
+            'cdn'             => '您的 CDN 域名',
+            'scheme'          => 'https',
+            'read_from_cdn'   => false,
+    ]
 ```
 
 ### 感谢
