@@ -1,8 +1,8 @@
 ## Think-Filesystem-cloud
 
 ### 要求
-   - php 7.1
-   - topthink/framework 6.0.0
+   - php 8.0.2
+   - topthink/framework 6.1.x
    
 ### 使用
 ```php
