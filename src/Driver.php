@@ -414,16 +414,16 @@ abstract class Driver
      * Undocumented function
      *
      * @param $path
-     * @param $contents
-     * @param $options
+     * @param File|string $file 文件
+     * @param  $options
      * @return void
      */
-    public function put($path, $contents, $options = [])
+    public function put($path, $contents,$options = [])
     {
         $options = is_string($options) ? ['visibility' => $options] : (array)$options;
         if ($contents instanceof File ||
             $contents instanceof UploadedFile) {
-            return $this->putFile($path, $contents, $options);
+            return $this->putFile( $path,$contents,$options );
         }
         try {
             if ($contents instanceof StreamInterface) {
