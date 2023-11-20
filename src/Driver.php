@@ -527,6 +527,16 @@ abstract class Driver
     }
 
     /**
+     * Determine if Flysystem exceptions should be thrown.
+     *
+     * @return bool
+     */
+    protected function throwsExceptions(): bool
+    {
+        return (bool)( $this->config['throw'] ?? false );
+    }
+
+    /**
      * 魔术方法
      */
     public function __call($method, $parameters)
