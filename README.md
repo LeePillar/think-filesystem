@@ -1,9 +1,9 @@
 ## Think-Filesystem-cloud
 
 ### 要求
-   - php 8.0.2
+   - php >= 8.0.2
    - topthink/framework 6.1.x
-   
+   - topthink/framework 8.x.x
 ### 使用
 ```php
 composer require apixx/think-filesystem
