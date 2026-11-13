@@ -16,7 +16,7 @@ class Filesystem extends Manager
      * @param null|string $name
      * @return Driver
      */
-    public function disk(string $name = null): Driver
+    public function disk(?string $name = null): Driver
     {
         return $this->driver($name);
     }
@@ -41,7 +41,7 @@ class Filesystem extends Manager
      * @param mixed $default 默认值
      * @return mixed
      */
-    public function getConfig(string $name = null, $default = null)
+    public function getConfig(?string $name = null, $default = null)
     {
         if (!is_null($name)) {
             return $this->app->config->get('filesystem.' . $name, $default);

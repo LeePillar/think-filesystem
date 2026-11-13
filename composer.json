@@ -1,16 +1,24 @@
 {
     "name": "apixx/think-filesystem",
-    "description": "flysystem for thinkphp6.1",
+    "description": "Flysystem storage manager for ThinkPHP, supports local / aliyun / qcloud / huawei / qiniu disks",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "thinkphp",
+        "flysystem",
+        "filesystem",
+        "storage",
+        "oss"
+    ],
     "authors": [
         {
             "name": "pillar",
             "email": "ltmn@qq.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
+        "php": ">=8.0",
+        "topthink/framework": "^6.1 || ^8.0",
         "guzzlehttp/guzzle": "^7.0",
         "apixx/flysystem-oss": "^1.0",
         "apixx/flysystem-cos": "^1.0",
